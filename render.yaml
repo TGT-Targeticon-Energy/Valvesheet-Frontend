@@ -1,0 +1,26 @@
+# Render Blueprint Configuration
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: spe-valvesheet-frontend-staging
+    env: static
+    buildCommand: bun install && bun run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://spe-valvesheet-backend-staging.onrender.com/api
+      - key: VITE_ML_API_URL
+        value: https://spe-valvesheet-ai-staging.onrender.com/api
+      - key: VITE_USER_MGMT_API
+        value: https://spe-valvesheet-backend-staging.onrender.com/api
+      - key: VITE_AGENT_API_URL
+        value: https://valvesheet-ai-rahul.onrender.com/api
+      # PMS Workflow backend — set to the deployed PMS Generator URL.
+      # In local dev the frontend defaults to http://localhost:8004.
+      - key: VITE_PMS_API_URL
+        value: https://pms-generator-new.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
