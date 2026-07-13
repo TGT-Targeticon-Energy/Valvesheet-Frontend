@@ -291,7 +291,7 @@ export default function ValvesheetCreatePage() {
           </div>
 
           {existing && (
-            <div className="rounded-md border border-amber-300 bg-amber-50 p-3 text-xs text-amber-900 flex items-start gap-2">
+            <div className="rounded-md border border-blue-300 bg-blue-50 p-3 text-xs text-blue-900 flex items-start gap-2">
               <AlertCircle className="w-4 h-4 mt-0.5" />
               <div>
                 <div className="font-medium">

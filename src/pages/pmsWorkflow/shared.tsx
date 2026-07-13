@@ -261,19 +261,19 @@ export function PmsSnapshotView({ payload }: { payload: Record<string, unknown> 
           {Object.keys(derived).length > 0 && (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2">
               {derived.pressure?.hydrotest_barg != null && (
-                <div className="bg-amber-50 border border-amber-200 rounded-md px-3 py-2 text-xs">
+                <div className="bg-blue-50 border border-blue-200 rounded-md px-3 py-2 text-xs">
                   <div className="text-muted-foreground">Hydrotest (barg)</div>
                   <div className="font-semibold">{num(derived.pressure.hydrotest_barg)}</div>
                 </div>
               )}
               {derived.pressure?.operating_barg != null && (
-                <div className="bg-amber-50 border border-amber-200 rounded-md px-3 py-2 text-xs">
+                <div className="bg-blue-50 border border-blue-200 rounded-md px-3 py-2 text-xs">
                   <div className="text-muted-foreground">Operating 80% (barg)</div>
                   <div className="font-semibold">{num(derived.pressure.operating_barg)}</div>
                 </div>
               )}
               {derived.temperature?.design_f != null && (
-                <div className="bg-amber-50 border border-amber-200 rounded-md px-3 py-2 text-xs">
+                <div className="bg-blue-50 border border-blue-200 rounded-md px-3 py-2 text-xs">
                   <div className="text-muted-foreground">Design Temp (°F)</div>
                   <div className="font-semibold">{num(derived.temperature.design_f, 1)}</div>
                 </div>

@@ -126,7 +126,7 @@ export function DownloadLibrary({ refreshTrigger }: Props) {
             <button
               onClick={() => handleRedownload(dl)}
               disabled={isRedownloading}
-              className="p-1.5 rounded text-gray-400 hover:text-amber-600 hover:bg-amber-50 opacity-0 group-hover:opacity-100 transition-all disabled:opacity-50"
+              className="p-1.5 rounded text-gray-400 hover:text-blue-600 hover:bg-blue-50 opacity-0 group-hover:opacity-100 transition-all disabled:opacity-50"
               title="Re-download"
             >
               {isRedownloading ? (

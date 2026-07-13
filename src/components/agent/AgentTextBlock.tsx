@@ -44,9 +44,9 @@ function parseVdsCodes(
         onClick={() => onVdsClick(code)}
         className={cn(
           "inline-flex items-center gap-1 px-2 py-0.5 mx-0.5",
-          "rounded-md border border-amber-200 bg-amber-50",
-          "text-amber-700 font-mono text-[13px] font-semibold",
-          "hover:bg-amber-100 hover:border-amber-300 hover:shadow-sm",
+          "rounded-md border border-blue-200 bg-blue-50",
+          "text-blue-700 font-mono text-[13px] font-semibold",
+          "hover:bg-blue-100 hover:border-blue-300 hover:shadow-sm",
           "active:scale-[0.97] transition-all duration-150 cursor-pointer",
           "align-baseline",
         )}

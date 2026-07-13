@@ -589,7 +589,7 @@ export default function AgentChatPage() {
           >
             {sidebarOpen ? <PanelLeftClose className="w-5 h-5" /> : <PanelLeft className="w-5 h-5" />}
           </button>
-          <div className="p-1.5 sm:p-2 rounded-lg bg-gradient-to-br from-amber-500 to-purple-600">
+          <div className="p-1.5 sm:p-2 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
             <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
           </div>
           <div className="flex-1 min-w-0">
@@ -605,8 +605,8 @@ export default function AgentChatPage() {
           <div className="max-w-3xl mx-auto py-4 sm:py-6">
             {isEmpty && (
               <div className="text-center py-8 sm:py-12">
-                <div className="inline-flex p-3 sm:p-4 rounded-2xl bg-gradient-to-br from-amber-50 to-purple-50 mb-4 sm:mb-6">
-                  <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-amber-600" />
+                <div className="inline-flex p-3 sm:p-4 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 mb-4 sm:mb-6">
+                  <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-blue-600" />
                 </div>
                 <h2 className="text-lg sm:text-xl font-semibold mb-2">Valve Datasheet Agent</h2>
                 <p className="text-sm text-muted-foreground mb-6 sm:mb-8 max-w-md mx-auto px-2">
@@ -668,7 +668,7 @@ export default function AgentChatPage() {
                 onKeyDown={handleKeyDown}
                 placeholder={isMobile ? "Ask about valves..." : "Ask about valves, specs, or paste a VDS code..."}
                 rows={1}
-                className="flex-1 resize-none rounded-xl border border-gray-300 px-3 sm:px-4 py-2.5 sm:py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                className="flex-1 resize-none rounded-xl border border-gray-300 px-3 sm:px-4 py-2.5 sm:py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 disabled={isStreaming}
               />
               {isStreaming ? (
@@ -682,7 +682,7 @@ export default function AgentChatPage() {
                 <button
                   onClick={() => handleSend(inputText)}
                   disabled={!inputText.trim()}
-                  className="p-2.5 sm:p-3 rounded-xl bg-amber-600 text-white hover:bg-amber-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors flex-shrink-0"
+                  className="p-2.5 sm:p-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors flex-shrink-0"
                 >
                   <Send className="w-5 h-5" />
                 </button>
@@ -718,7 +718,7 @@ function BlockRenderer({
     case "user":
       return (
         <div className="flex justify-end mb-4">
-          <div className="bg-amber-600 text-white rounded-2xl rounded-br-md px-3 sm:px-4 py-2 sm:py-2.5 max-w-[85%] sm:max-w-[75%] text-sm whitespace-pre-wrap">
+          <div className="bg-blue-600 text-white rounded-2xl rounded-br-md px-3 sm:px-4 py-2 sm:py-2.5 max-w-[85%] sm:max-w-[75%] text-sm whitespace-pre-wrap">
             {block.text}
           </div>
         </div>
@@ -771,7 +771,7 @@ function BlockRenderer({
               <div className="w-2 h-2 rounded-full bg-green-500" />
             </div>
           ) : (
-            <Loader2 className="w-4 h-4 animate-spin text-amber-500" />
+            <Loader2 className="w-4 h-4 animate-spin text-blue-500" />
           )}
           <Wrench className="w-3.5 h-3.5" />
           <span>{toolLabels[block.name] || "Processing your request"}</span>
@@ -782,7 +782,7 @@ function BlockRenderer({
 
     case "status":
       return (
-        <div className="flex items-center gap-2 text-xs text-amber-500 py-1.5 mb-2">
+        <div className="flex items-center gap-2 text-xs text-blue-500 py-1.5 mb-2">
           <Loader2 className="w-3.5 h-3.5 animate-spin" />
           <span>{block.message}</span>
         </div>

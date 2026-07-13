@@ -16,8 +16,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 15%;
 
-    /* Targeticon Gold Primary */
-    --primary: 39 90% 28%;
+    /* Industrial Blue Primary */
+    --primary: 215 65% 35%;
     --primary-foreground: 0 0% 100%;
 
     /* Muted Steel */
@@ -36,7 +36,7 @@
 
     --border: 210 20% 88%;
     --input: 210 20% 88%;
-    --ring: 39 90% 28%;
+    --ring: 215 65% 35%;
 
     --radius: 0.375rem;
 
@@ -62,12 +62,12 @@
     /* Sidebar */
     --sidebar-background: 215 25% 18%;
     --sidebar-foreground: 210 20% 90%;
-    --sidebar-primary: 39 90% 28%;
+    --sidebar-primary: 195 70% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 215 25% 25%;
     --sidebar-accent-foreground: 210 20% 95%;
     --sidebar-border: 215 25% 25%;
-    --sidebar-ring: 39 90% 28%;
+    --sidebar-ring: 195 70% 50%;
 
     /* Engineering Data Display */
     --data-header: 215 25% 20%;
@@ -85,7 +85,7 @@
     --popover: 215 25% 14%;
     --popover-foreground: 210 20% 95%;
 
-    --primary: 42 93% 53%;
+    --primary: 195 70% 50%;
     --primary-foreground: 215 25% 10%;
 
     --secondary: 215 25% 20%;
@@ -102,7 +102,7 @@
 
     --border: 215 25% 22%;
     --input: 215 25% 22%;
-    --ring: 42 93% 53%;
+    --ring: 195 70% 50%;
 
     --validated-bg: 145 65% 15%;
     --assumption-bg: 38 92% 15%;

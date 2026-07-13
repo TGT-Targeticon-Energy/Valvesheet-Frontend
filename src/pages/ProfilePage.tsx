@@ -11,7 +11,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { AlertCircle, CheckCircle } from "lucide-react";
+import { AlertCircle, CheckCircle2 } from "lucide-react";
 
 const ProfilePage = () => {
   const { user, refreshUser } = useAuth();
@@ -191,7 +191,7 @@ const ProfilePage = () => {
                 )}
                 {profileSuccess && (
                   <Alert>
-                    <CheckCircle className="h-4 w-4" />
+                    <CheckCircle2 className="h-4 w-4" />
                     <AlertDescription>Profile updated successfully.</AlertDescription>
                   </Alert>
                 )}
@@ -259,7 +259,7 @@ const ProfilePage = () => {
                 )}
                 {passwordSuccess && (
                   <Alert>
-                    <CheckCircle className="h-4 w-4" />
+                    <CheckCircle2 className="h-4 w-4" />
                     <AlertDescription>{passwordSuccess}</AlertDescription>
                   </Alert>
                 )}

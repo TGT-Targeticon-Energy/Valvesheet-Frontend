@@ -146,8 +146,8 @@ const LoginPage = () => {
         <div className="flex justify-center gap-2 md:justify-start">
           <a href="#" className="flex items-center gap-2 font-medium">
             <img
-              src="/targeticon-logo.png"
-              alt="Targeticon Logo"
+              src="https://www.shapoorjipallonjienergy.com/img/logo.png"
+              alt="Shapoorji Pallonji Energy Logo"
               className="h-20 w-auto mx-auto mb-6 mt-6"
             />
           </a>
@@ -192,7 +192,7 @@ const LoginPage = () => {
                   <button
                     type="button"
                     onClick={() => setForgotPasswordOpen(true)}
-                    className="text-sm font-medium text-amber-600 hover:text-amber-700 hover:underline"
+                    className="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline"
                   >
                     Forgot password?
                   </button>
@@ -211,7 +211,7 @@ const LoginPage = () => {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-amber-600 hover:bg-amber-700"
+                className="w-full bg-blue-600 hover:bg-blue-700"
               >
                 {isLoading ? (
                   <>
@@ -241,13 +241,13 @@ const LoginPage = () => {
 
 
 
-    {/* <div className="min-h-screen bg-gradient-to-br from-amber-50 to-indigo-100 flex items-center justify-center p-4">
+    {/* <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <Card className="shadow-xl">
           <div className="text-center mb-8">
             <img
-              src="/targeticon-logo.png"
-              alt="Targeticon Logo"
+              src="https://www.shapoorjipallonjienergy.com/img/logo.png"
+              alt="Shapoorji Pallonji Energy Logo"
               className="h-20 w-auto mx-auto mb-6 mt-6"
             />
           </div>
@@ -297,7 +297,7 @@ const LoginPage = () => {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-amber-600 hover:bg-amber-700"
+                className="w-full bg-blue-600 hover:bg-blue-700"
               >
                 {isLoading ? (
                   <>

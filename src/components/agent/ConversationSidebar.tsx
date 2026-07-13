@@ -95,7 +95,7 @@ export function ConversationSidebar({
       <div className="p-3 border-b">
         <button
           onClick={onNewSession}
-          className="flex items-center gap-2 w-full px-3 py-2.5 text-sm font-medium rounded-lg bg-amber-600 text-white hover:bg-amber-700 transition-colors"
+          className="flex items-center gap-2 w-full px-3 py-2.5 text-sm font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors"
         >
           <Plus className="w-4 h-4" />
           New conversation
@@ -108,7 +108,7 @@ export function ConversationSidebar({
           onClick={() => setActiveTab("chats")}
           className={`flex-1 flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-medium transition-colors ${
             activeTab === "chats"
-              ? "text-amber-600 border-b-2 border-amber-600 bg-white"
+              ? "text-blue-600 border-b-2 border-blue-600 bg-white"
               : "text-gray-500 hover:text-gray-700 hover:bg-gray-100"
           }`}
         >
@@ -119,7 +119,7 @@ export function ConversationSidebar({
           onClick={() => setActiveTab("downloads")}
           className={`flex-1 flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-medium transition-colors ${
             activeTab === "downloads"
-              ? "text-amber-600 border-b-2 border-amber-600 bg-white"
+              ? "text-blue-600 border-b-2 border-blue-600 bg-white"
               : "text-gray-500 hover:text-gray-700 hover:bg-gray-100"
           }`}
         >
@@ -151,7 +151,7 @@ export function ConversationSidebar({
                   key={s.id}
                   className={`group flex items-center gap-2 mx-2 px-3 py-2.5 rounded-lg cursor-pointer transition-colors ${
                     isActive
-                      ? "bg-amber-100 text-amber-900"
+                      ? "bg-blue-100 text-blue-900"
                       : "hover:bg-gray-100 text-gray-700"
                   }`}
                   onClick={() => !isEditing && onSelectSession(s.id)}
@@ -168,7 +168,7 @@ export function ConversationSidebar({
                           if (e.key === "Enter") handleRename(s.id);
                           if (e.key === "Escape") setEditingId(null);
                         }}
-                        className="flex-1 text-sm bg-white border rounded px-1.5 py-0.5 outline-none focus:ring-1 focus:ring-amber-400"
+                        className="flex-1 text-sm bg-white border rounded px-1.5 py-0.5 outline-none focus:ring-1 focus:ring-blue-400"
                         onClick={(e) => e.stopPropagation()}
                       />
                       <button
@@ -195,7 +195,7 @@ export function ConversationSidebar({
                       <div className="hidden group-hover:flex items-center gap-0.5">
                         <button
                           onClick={(e) => { e.stopPropagation(); startEditing(s); }}
-                          className="p-1 rounded text-gray-400 hover:text-amber-600 hover:bg-amber-50"
+                          className="p-1 rounded text-gray-400 hover:text-blue-600 hover:bg-blue-50"
                         >
                           <Pencil className="w-3.5 h-3.5" />
                         </button>

@@ -339,7 +339,7 @@ const AdminPage = () => {
             <Card>
               <CardHeader className="flex justify-between pb-2">
                 <CardTitle className="text-sm font-medium">Total Users</CardTitle>
-                <Users className="h-4 w-4 text-amber-600" />
+                <Users className="h-4 w-4 text-blue-600" />
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">{users.length}</div>
@@ -594,7 +594,7 @@ const AdminPage = () => {
                 <TabsContent value="reset-requests">
                   {isLoading ? (
                     <div className="flex justify-center py-8">
-                      <div className="animate-spin h-8 w-8 border-b-2 border-amber-600 rounded-full" />
+                      <div className="animate-spin h-8 w-8 border-b-2 border-blue-600 rounded-full" />
                     </div>
                   ) : resetRequests.length === 0 ? (
                     <p className="text-sm text-gray-500 py-6 text-center">
@@ -658,7 +658,7 @@ const AdminPage = () => {
                 <TabsContent value="users">
                   {isLoading ? (
                     <div className="flex justify-center py-8">
-                      <div className="animate-spin h-8 w-8 border-b-2 border-amber-600 rounded-full" />
+                      <div className="animate-spin h-8 w-8 border-b-2 border-blue-600 rounded-full" />
                     </div>
                   ) : (
                     <div className="overflow-x-auto">

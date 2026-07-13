@@ -164,7 +164,7 @@ export default function DatabaseExplorerPage() {
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div>
             <h1 className="text-2xl font-bold flex items-center gap-2">
-              <Database className="w-6 h-6 text-amber-600" />
+              <Database className="w-6 h-6 text-blue-600" />
               Database Explorer
             </h1>
             <p className="text-sm text-muted-foreground mt-1">
@@ -373,7 +373,7 @@ function CellValue({ value }: { value: unknown }) {
   // arrays / objects → compact JSON preview
   return (
     <details className="cursor-pointer">
-      <summary className="text-amber-600 hover:underline">
+      <summary className="text-blue-600 hover:underline">
         {Array.isArray(value) ? `[${value.length}]` : "{…}"}
       </summary>
       <pre className="text-[10px] bg-slate-50 dark:bg-slate-900 p-1.5 rounded mt-1 overflow-x-auto max-w-full">

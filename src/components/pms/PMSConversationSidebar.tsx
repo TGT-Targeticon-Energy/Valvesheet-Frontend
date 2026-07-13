@@ -143,9 +143,9 @@ export function PMSConversationSidebar({
       <div className="px-2 py-2 border-b border-gray-200 bg-white">
         <button
           onClick={onNewSession}
-          className="w-full flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-200 bg-white hover:bg-amber-50 hover:border-amber-300 text-sm text-gray-800 transition-colors"
+          className="w-full flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-200 bg-white hover:bg-blue-50 hover:border-blue-300 text-sm text-gray-800 transition-colors"
         >
-          <Plus className="w-4 h-4 text-amber-600" />
+          <Plus className="w-4 h-4 text-blue-600" />
           <span className="font-medium">New chat</span>
         </button>
       </div>
@@ -182,7 +182,7 @@ export function PMSConversationSidebar({
                   key={s.id}
                   className={`group rounded-lg transition-colors ${
                     isActive
-                      ? "bg-amber-100 border border-amber-300"
+                      ? "bg-blue-100 border border-blue-300"
                       : "hover:bg-white border border-transparent hover:border-gray-200"
                   }`}
                 >
@@ -196,7 +196,7 @@ export function PMSConversationSidebar({
                           if (e.key === "Enter") finishRename(s.id);
                           if (e.key === "Escape") setEditingId(null);
                         }}
-                        className="flex-1 min-w-0 text-sm px-2 py-1 rounded border border-gray-300 focus:outline-none focus:border-amber-400"
+                        className="flex-1 min-w-0 text-sm px-2 py-1 rounded border border-gray-300 focus:outline-none focus:border-blue-400"
                       />
                       <button
                         onClick={() => finishRename(s.id)}
@@ -223,7 +223,7 @@ export function PMSConversationSidebar({
                           <div
                             className={`text-sm truncate ${
                               isActive
-                                ? "font-semibold text-amber-900"
+                                ? "font-semibold text-blue-900"
                                 : "font-medium text-gray-800"
                             }`}
                             title={s.title}

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
   AlertTriangle,
-  CheckCircle,
+  CheckCircle2,
   XCircle,
   Clock,
   Filter,
@@ -103,16 +103,10 @@ const auditLog = [
   },
 ];
 
-const statusIconComponent = {
-  passed: CheckCircle,
-  warning: AlertTriangle,
-  failed: XCircle,
-};
-
-const statusIconClass = {
-  passed: "w-5 h-5 text-validated",
-  warning: "w-5 h-5 text-assumption",
-  failed: "w-5 h-5 text-conflict",
+const statusIcon = {
+  passed: <CheckCircle2 className="w-5 h-5 text-validated" />,
+  warning: <AlertTriangle className="w-5 h-5 text-assumption" />,
+  failed: <XCircle className="w-5 h-5 text-conflict" />,
 };
 
 const statusBg = {
@@ -120,11 +114,6 @@ const statusBg = {
   warning: "bg-assumption-bg border-assumption/20",
   failed: "bg-conflict-bg border-conflict/20",
 };
-
-function StatusIcon({ status }: { status: keyof typeof statusIconComponent }) {
-  const Icon = statusIconComponent[status];
-  return <Icon className={statusIconClass[status]} />;
-}
 
 export default function ValidationPage() {
   const passedCount = validationRules.filter((r) => r.status === "passed").length;
@@ -213,7 +202,7 @@ export default function ValidationPage() {
                       className={`p-4 rounded-lg border ${statusBg[rule.status as keyof typeof statusBg]}`}
                     >
                       <div className="flex items-start gap-3">
-                        <StatusIcon status={rule.status as keyof typeof statusIconComponent} />
+                        {statusIcon[rule.status as keyof typeof statusIcon]}
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 flex-wrap">
                             <span className="font-mono text-xs text-muted-foreground">

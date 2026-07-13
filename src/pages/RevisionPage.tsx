@@ -94,7 +94,7 @@ function StatePhaseBadge({ state, phase }: { state: string; phase: string }) {
     phase === "POST_CONTRACT"
       ? "bg-emerald-100 text-emerald-800"
       : phase === "PRE_CONTRACT"
-      ? "bg-amber-100 text-amber-800"
+      ? "bg-blue-100 text-blue-800"
       : "bg-amber-100 text-amber-800";
   return (
     <div className="flex items-center gap-2">

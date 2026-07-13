@@ -174,7 +174,7 @@ export default function InlinePMSPreview({
   // ── Loading / error states ──────────────────────────────────────
   if (loading && !computed) {
     return (
-      <div className="rounded-lg border border-amber-200 bg-amber-50/30 px-6 py-10 flex items-center justify-center gap-2 text-sm text-amber-800">
+      <div className="rounded-lg border border-blue-200 bg-blue-50/30 px-6 py-10 flex items-center justify-center gap-2 text-sm text-blue-800">
         <Loader2 className="w-4 h-4 animate-spin" />
         Loading PMS for {request.piping_class}…
       </div>
@@ -192,7 +192,7 @@ export default function InlinePMSPreview({
   }
 
   return (
-    <div className="rounded-xl border border-amber-200 bg-amber-50/30 p-3 space-y-3">
+    <div className="rounded-xl border border-blue-200 bg-blue-50/30 p-3 space-y-3">
       {/* Compact design-conditions strip + actions */}
       <div className="flex flex-wrap items-end gap-3 rounded-lg bg-white border border-border px-3 py-2">
         <div className="min-w-[110px]">
