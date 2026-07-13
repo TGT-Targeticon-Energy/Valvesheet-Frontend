@@ -28,7 +28,7 @@ import {
   PackageOpen,
   Eye,
   X,
-  CheckCircle2,
+  CheckCircle,
   AlertCircle,
 } from "lucide-react";
 import { downloadBulkDatasheets, downloadSingleDatasheet, type DatasheetInput } from "@/lib/excelBuilder";
@@ -240,7 +240,7 @@ function PreviewModal({ vdsCode, sessionId, onClose }: PreviewModalProps) {
             <span className="font-mono font-bold text-lg text-white tracking-wide">{vdsCode}</span>
             {!loading && data && (
               <div className="flex items-center gap-1.5 bg-white/20 rounded-full px-2.5 py-1">
-                <CheckCircle2 className="w-3.5 h-3.5 text-green-300" />
+                <CheckCircle className="w-3.5 h-3.5 text-green-300" />
                 <span className="text-xs font-semibold text-white">Ready</span>
               </div>
             )}

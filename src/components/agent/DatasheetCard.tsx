@@ -9,7 +9,7 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import {
-  FileSpreadsheet, Download, Eye, CheckCircle2, Loader2, X, AlertCircle,
+  FileSpreadsheet, Download, Eye, CheckCircle, Loader2, X, AlertCircle,
   XCircle, AlertTriangle, ShieldX, OctagonX,
 } from "lucide-react";
 import { downloadSingleDatasheet } from "@/lib/excelBuilder";
@@ -198,7 +198,7 @@ function DatasheetPreviewModal({ vdsCode, data, sessionId, validationErrors, val
               </div>
             ) : (
               <div className="flex items-center gap-1.5 bg-green-100 border border-green-300 rounded-full px-2.5 py-1">
-                <CheckCircle2 className="w-3.5 h-3.5 text-green-600" />
+                <CheckCircle className="w-3.5 h-3.5 text-green-600" />
                 <span className="text-xs font-semibold text-green-700">Ready</span>
               </div>
             )}
@@ -412,7 +412,7 @@ export function DatasheetCard({ vdsCode, data, sessionId, validationErrors, vali
             </div>
           ) : (
             <div className="flex items-center gap-1.5 bg-green-100 border border-green-300 rounded-full px-2.5 py-1">
-              <CheckCircle2 className="w-3.5 h-3.5 text-green-600" />
+              <CheckCircle className="w-3.5 h-3.5 text-green-600" />
               <span className="text-xs font-semibold text-green-700">Ready</span>
             </div>
           )}

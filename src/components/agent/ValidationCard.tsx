@@ -6,7 +6,7 @@
  * Amber: warnings that need review
  */
 
-import { CheckCircle2, XCircle, AlertTriangle, ShieldCheck, ShieldX, ShieldAlert, OctagonX } from "lucide-react";
+import { CheckCircle, XCircle, AlertTriangle, ShieldCheck, ShieldX, ShieldAlert, OctagonX } from "lucide-react";
 import { SuggestionCard, SuggestionItem } from "./SuggestionCard";
 
 interface ValidationCardProps {
@@ -113,7 +113,7 @@ export function ValidationCard({
 
       {isValid && !hasErrors && !hasWarnings && (
         <div className="flex items-center gap-1.5 mt-1">
-          <CheckCircle2 className="w-3.5 h-3.5 text-green-500" />
+          <CheckCircle className="w-3.5 h-3.5 text-green-500" />
           <p className="text-sm text-green-700">Ready to generate datasheet.</p>
         </div>
       )}

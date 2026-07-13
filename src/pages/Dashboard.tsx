@@ -14,7 +14,7 @@ import { Panel } from "@/components/common/Panel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
-  FileSpreadsheet, CheckCircle2, Clock, Sparkles, FilePlus2,
+  FileSpreadsheet, CheckCircle, Clock, Sparkles, FilePlus2,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
@@ -98,7 +98,7 @@ export default function Dashboard() {
               title="Signed"
               value={signed}
               subtitle="AFC or As-Built revisions"
-              icon={CheckCircle2}
+              icon={CheckCircle}
               variant="accent"
             />
             <KPICard

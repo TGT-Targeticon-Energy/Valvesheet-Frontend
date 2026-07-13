@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
   AlertTriangle,
-  CheckCircle2,
+  CheckCircle,
   XCircle,
   Clock,
   Filter,
@@ -104,7 +104,7 @@ const auditLog = [
 ];
 
 const statusIcon = {
-  passed: <CheckCircle2 className="w-5 h-5 text-validated" />,
+  passed: <CheckCircle className="w-5 h-5 text-validated" />,
   warning: <AlertTriangle className="w-5 h-5 text-assumption" />,
   failed: <XCircle className="w-5 h-5 text-conflict" />,
 };

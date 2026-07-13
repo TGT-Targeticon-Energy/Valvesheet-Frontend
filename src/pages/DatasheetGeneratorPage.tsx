@@ -13,7 +13,7 @@ import {
   Download,
   Printer,
   Zap,
-  CheckCircle2,
+  CheckCircle,
   Settings2,
   Wrench,
   TestTube,
@@ -2208,7 +2208,7 @@ export default function DatasheetGeneratorPage() {
                             <Loader2 className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 animate-spin text-muted-foreground" />
                           )}
                           {isDataLoaded && !isFetching && (
-                            <CheckCircle2 className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-green-500" />
+                            <CheckCircle className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-green-500" />
                           )}
                         </div>
                         <Tooltip>
