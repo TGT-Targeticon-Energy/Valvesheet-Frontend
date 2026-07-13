@@ -46,8 +46,8 @@ export function AppHeader({ title, breadcrumbs, showLogo = true, isMainHeader = 
       {showLogo && (
         <div className="flex items-center">
           <img
-            src="https://www.shapoorjipallonjienergy.com/img/logo.png"
-            alt="Shapoorji Pallonji Energy"
+            src="/targeticon-logo.png"
+            alt="Targeticon"
             className="h-8 sm:h-10 object-contain"
           />
         </div>
@@ -63,7 +63,7 @@ export function AppHeader({ title, breadcrumbs, showLogo = true, isMainHeader = 
         {/* Notifications */}
         <Button variant="ghost" size="icon" className="h-9 w-9 relative">
           <Bell className="w-4 h-4 text-gray-500" />
-          <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-blue-500 rounded-full" />
+          <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-amber-500 rounded-full" />
         </Button>
 
         {/* User Menu */}

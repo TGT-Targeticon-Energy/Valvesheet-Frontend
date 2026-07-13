@@ -652,7 +652,7 @@ export default function PMSGeneratorPage() {
 
           {/* ── Live class-code preview ── */}
           {computing && (
-            <div className="rounded-lg border border-blue-200 bg-blue-50/60 px-3 py-2 flex items-center gap-2 text-sm text-blue-800">
+            <div className="rounded-lg border border-amber-200 bg-amber-50/60 px-3 py-2 flex items-center gap-2 text-sm text-amber-800">
               <Loader2 className="w-4 h-4 animate-spin" />
               Computing…
             </div>
@@ -931,7 +931,7 @@ export default function PMSGeneratorPage() {
 function SectionTitle({ num, label }: { num: number; label: string }) {
   return (
     <span className="inline-flex items-center gap-2 text-sm font-semibold">
-      <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-blue-600 text-white text-[11px]">
+      <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-600 text-white text-[11px]">
         {num}
       </span>
       {label}
@@ -948,8 +948,8 @@ function EmptyState() {
   return (
     <Card>
       <div className="flex flex-col items-center justify-center text-center py-20">
-        <div className="p-4 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 mb-4">
-          <FileSpreadsheet className="w-10 h-10 text-blue-600" />
+        <div className="p-4 rounded-2xl bg-gradient-to-br from-amber-50 to-purple-50 mb-4">
+          <FileSpreadsheet className="w-10 h-10 text-amber-600" />
         </div>
         <h2 className="text-lg font-semibold mb-2">Configure your piping class</h2>
         <p className="text-sm text-muted-foreground max-w-md">
@@ -997,7 +997,7 @@ export function ReportPanel({
   return (
     <div className="space-y-4">
       {/* ── Banner ── */}
-      <Card className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0">
+      <Card className="bg-gradient-to-r from-amber-600 to-purple-600 text-white border-0">
         <div className="text-[11px] uppercase tracking-wide opacity-80">
           Resolved §5.5 PMS Code
         </div>
@@ -1151,7 +1151,7 @@ function PtRatingTab({
                   <th
                     key={i}
                     className={`px-2 py-1.5 border border-border ${
-                      i === highlightIdx ? "bg-blue-100 text-blue-900" : ""
+                      i === highlightIdx ? "bg-amber-100 text-amber-900" : ""
                     }`}
                   >
                     {String(l)}
@@ -1176,7 +1176,7 @@ function PtRatingTab({
                   <td
                     key={i}
                     className={`px-2 py-1.5 border border-border text-center ${
-                      i === highlightIdx ? "bg-blue-50 font-semibold" : ""
+                      i === highlightIdx ? "bg-amber-50 font-semibold" : ""
                     }`}
                   >
                     {fmtP(p)}
@@ -1197,7 +1197,7 @@ function PtRatingTab({
                   <td
                     key={i}
                     className={`px-2 py-1.5 border border-border text-center ${
-                      i === highlightIdx ? "bg-blue-50 font-semibold" : ""
+                      i === highlightIdx ? "bg-amber-50 font-semibold" : ""
                     }`}
                   >
                     {String(labels[i] ?? t)}
@@ -1208,7 +1208,7 @@ function PtRatingTab({
           </table>
         </div>
         <p className="text-[11px] text-muted-foreground mt-2">
-          <span className="inline-block w-3 h-3 align-middle bg-blue-100 border border-blue-300 rounded-sm mr-1" />
+          <span className="inline-block w-3 h-3 align-middle bg-amber-100 border border-amber-300 rounded-sm mr-1" />
           Highlighted column = rating at design temperature.
         </p>
       </Card>
@@ -1715,7 +1715,7 @@ function GovTag({ governs }: { governs: boolean }) {
       [GOVERNS]
     </span>
   ) : (
-    <span className="inline-block text-[10px] font-semibold px-1.5 py-0.5 rounded bg-blue-50 text-blue-700 align-middle">
+    <span className="inline-block text-[10px] font-semibold px-1.5 py-0.5 rounded bg-amber-50 text-amber-700 align-middle">
       [active]
     </span>
   );
@@ -1792,7 +1792,7 @@ function WtTableRow({ row }: { row: ComputeWtRow }) {
       : "—";
   return (
     <tr className="border-t border-border hover:bg-muted/30">
-      <td className="px-2 py-1.5 text-center font-medium text-blue-700">
+      <td className="px-2 py-1.5 text-center font-medium text-amber-700">
         {row.nps}
       </td>
       <td className="px-2 py-1.5 text-center">{fmt(row.od_mm, 1)}</td>
@@ -1820,13 +1820,13 @@ function FlagCard({ flag }: { flag: ComputeFlag }) {
     critical: "border-red-300 bg-red-50 text-red-900",
     mandatory: "border-amber-300 bg-amber-50 text-amber-900",
     warning: "border-yellow-300 bg-yellow-50 text-yellow-900",
-    note: "border-blue-300 bg-blue-50 text-blue-900",
+    note: "border-amber-300 bg-amber-50 text-amber-900",
   };
   const badge: Record<ComputeFlag["level"], string> = {
     critical: "bg-red-600 text-white",
     mandatory: "bg-amber-600 text-white",
     warning: "bg-yellow-500 text-white",
-    note: "bg-blue-600 text-white",
+    note: "bg-amber-600 text-white",
   };
   const label: Record<ComputeFlag["level"], string> = {
     critical: "Critical",
@@ -1915,7 +1915,7 @@ function FormulaCard({
           {formula.W ?? "—"} | Y = {formula.Y.toFixed(2)}{" "}
           <DimTag>{formula.Y_label}</DimTag> | c = {formula.C_in.toFixed(4)}"{" "}
           <DimTag>{formula.C_mm} mm</DimTag> | mill tol ={" "}
-          <span className="text-blue-700 font-semibold">
+          <span className="text-amber-700 font-semibold">
             {(formula.mill_tolerance * 100).toFixed(1)}%
           </span>
         </div>
@@ -2037,12 +2037,12 @@ function BoreSection({
           ({bore.range})
         </span>
       </h3>
-      <div className="rounded-md border-l-4 border-blue-500 bg-blue-50/60 px-3 py-2 text-sm">
-        <strong className="text-blue-900">Connection:</strong>{" "}
-        <span className="text-blue-700">{bore.connection}</span>
-        <span className="text-blue-300 mx-2">|</span>
-        <strong className="text-blue-900">Schedule:</strong>{" "}
-        <span className="text-blue-700">{bore.schedule}</span>
+      <div className="rounded-md border-l-4 border-amber-500 bg-amber-50/60 px-3 py-2 text-sm">
+        <strong className="text-amber-900">Connection:</strong>{" "}
+        <span className="text-amber-700">{bore.connection}</span>
+        <span className="text-amber-300 mx-2">|</span>
+        <strong className="text-amber-900">Schedule:</strong>{" "}
+        <span className="text-amber-700">{bore.schedule}</span>
       </div>
       <div className="overflow-x-auto rounded-md border border-border">
         <table className="w-full text-sm">
@@ -2092,7 +2092,7 @@ function fmtNps(n: number): string {
 
 function branchCellPalette(code: string): { bg: string; text: string } {
   switch (code) {
-    case "T":  return { bg: "bg-blue-100",   text: "text-blue-800"   };
+    case "T":  return { bg: "bg-amber-100",   text: "text-amber-800"   };
     case "RT": return { bg: "bg-purple-100", text: "text-purple-800" };
     case "W":  return { bg: "bg-amber-100",  text: "text-amber-800"  };
     case "S":  return { bg: "bg-green-100",  text: "text-green-800"  };
@@ -2372,7 +2372,7 @@ function ValveRow({
       <dt className="text-muted-foreground">{label}</dt>
       <dd className="text-right">
         {entry.code && (
-          <div className="font-mono font-semibold text-blue-700">{entry.code}</div>
+          <div className="font-mono font-semibold text-amber-700">{entry.code}</div>
         )}
         {entry.desc && (
           <div className="text-xs text-muted-foreground italic mt-0.5 leading-relaxed">

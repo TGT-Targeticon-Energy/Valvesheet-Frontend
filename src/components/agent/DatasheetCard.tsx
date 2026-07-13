@@ -468,7 +468,7 @@ export function DatasheetCard({ vdsCode, data, sessionId, validationErrors, vali
                 ? "bg-red-600 hover:bg-red-700"
                 : hasWarnings
                   ? "bg-amber-600 hover:bg-amber-700"
-                  : "bg-blue-600 hover:bg-blue-700"
+                  : "bg-amber-600 hover:bg-amber-700"
             }`}
           >
             {downloading ? (

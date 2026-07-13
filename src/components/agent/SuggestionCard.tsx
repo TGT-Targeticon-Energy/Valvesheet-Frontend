@@ -234,7 +234,7 @@ function PreviewModal({ vdsCode, sessionId, onClose }: PreviewModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-4 flex items-center justify-between flex-shrink-0">
+        <div className="bg-gradient-to-r from-amber-600 to-indigo-600 px-5 py-4 flex items-center justify-between flex-shrink-0">
           <div className="flex items-center gap-3">
             <FileSpreadsheet className="w-5 h-5 text-white/90" />
             <span className="font-mono font-bold text-lg text-white tracking-wide">{vdsCode}</span>
@@ -273,7 +273,7 @@ function PreviewModal({ vdsCode, sessionId, onClose }: PreviewModalProps) {
         <div className="flex-1 overflow-y-auto px-5 py-4">
           {loading && (
             <div className="flex flex-col items-center justify-center py-16 gap-3">
-              <Loader2 className="w-8 h-8 text-blue-500 animate-spin" />
+              <Loader2 className="w-8 h-8 text-amber-500 animate-spin" />
               <p className="text-sm text-gray-500">Loading datasheet...</p>
             </div>
           )}
@@ -353,10 +353,10 @@ const TYPE_CONFIG: Record<
 > = {
   combination: {
     icon: FileSpreadsheet,
-    gradient: "from-blue-50 to-indigo-50",
-    border: "border-blue-200/70",
-    hoverBorder: "hover:border-blue-400",
-    accent: "text-blue-600",
+    gradient: "from-amber-50 to-indigo-50",
+    border: "border-amber-200/70",
+    hoverBorder: "hover:border-amber-400",
+    accent: "text-amber-600",
   },
   fix: {
     icon: Wrench,
@@ -548,7 +548,7 @@ export function SuggestionCard({
           </p>
           <button
             onClick={toggleAll}
-            className="flex items-center gap-1 text-[11px] text-blue-500 hover:text-blue-700 transition-colors"
+            className="flex items-center gap-1 text-[11px] text-amber-500 hover:text-amber-700 transition-colors"
           >
             {selected.size === suggestions.length ? (
               <CheckSquare className="w-3.5 h-3.5" />
@@ -563,7 +563,7 @@ export function SuggestionCard({
           <button
             onClick={handleBulkDownload}
             disabled={downloading}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 transition-colors shadow-sm"
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-lg bg-amber-600 text-white hover:bg-amber-700 disabled:opacity-50 transition-colors shadow-sm"
           >
             {downloading ? (
               <Loader2 className="w-3.5 h-3.5 animate-spin" />
@@ -600,7 +600,7 @@ export function SuggestionCard({
                 "shadow-sm hover:shadow-lg",
                 `bg-gradient-to-br ${config.gradient}`,
                 isSelected
-                  ? "border-blue-400 ring-2 ring-blue-200"
+                  ? "border-amber-400 ring-2 ring-amber-200"
                   : config.border,
                 config.hoverBorder,
               )}
@@ -611,7 +611,7 @@ export function SuggestionCard({
                 className={cn(
                   "absolute top-2 right-2 p-0.5 rounded transition-colors z-10",
                   isSelected
-                    ? "text-blue-600"
+                    ? "text-amber-600"
                     : "text-gray-300 hover:text-gray-500",
                 )}
               >
@@ -638,7 +638,7 @@ export function SuggestionCard({
                   <Eye
                     className={cn(
                       "w-4 h-4 transition-all duration-200 flex-shrink-0",
-                      "text-gray-300 group-hover:text-blue-500",
+                      "text-gray-300 group-hover:text-amber-500",
                     )}
                   />
                 </div>
@@ -675,7 +675,7 @@ export function SuggestionCard({
               </button>
 
               {/* Hover glow effect */}
-              <div className="absolute inset-0 rounded-xl ring-2 ring-transparent group-hover:ring-blue-300/50 transition-all duration-200 pointer-events-none" />
+              <div className="absolute inset-0 rounded-xl ring-2 ring-transparent group-hover:ring-amber-300/50 transition-all duration-200 pointer-events-none" />
             </div>
           );
         })}
