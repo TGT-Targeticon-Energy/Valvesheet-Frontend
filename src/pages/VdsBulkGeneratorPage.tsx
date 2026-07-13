@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import JSZip from "jszip";
 import {
   Bot, User, Loader2, ExternalLink, ChevronDown, Layers,
-  CheckCircle2, Circle, XCircle, Send, Trash2, Search,
+  CheckCircle, Circle, XCircle, Send, Trash2, Search,
   ClipboardCopy, RotateCcw, Download, Plus, AlertCircle, FolderArchive,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -466,7 +466,7 @@ function MultiChip({
               ? "bg-primary text-primary-foreground border-primary"
               : "border-border bg-background text-foreground hover:border-primary/50 hover:bg-accent"
           )}>
-          {values.includes(o.code) && <CheckCircle2 className="w-3 h-3 shrink-0" />}
+          {values.includes(o.code) && <CheckCircle className="w-3 h-3 shrink-0" />}
           {o.label}
         </button>
       ))}
@@ -593,7 +593,7 @@ function ThinkingBlock({ steps }: { steps: AgentStep[] }) {
           ? <Loader2 className="w-4 h-4 animate-spin text-primary shrink-0" />
           : hasError
           ? <XCircle className="w-4 h-4 text-destructive shrink-0" />
-          : <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0" />}
+          : <CheckCircle className="w-4 h-4 text-green-500 shrink-0" />}
         <span className="font-semibold text-foreground">
           {isRunning ? "Workingâ€¦" : hasError ? "Completed with some errors" : "All done"}
         </span>
@@ -606,7 +606,7 @@ function ThinkingBlock({ steps }: { steps: AgentStep[] }) {
           {steps.map((step) => (
             <div key={step.id} className="flex items-start gap-3 px-5 py-3">
               {step.status === "running"  ? <Loader2      className="w-4 h-4 mt-0.5 shrink-0 animate-spin text-primary" />
-             : step.status === "done"    ? <CheckCircle2 className="w-4 h-4 mt-0.5 shrink-0 text-green-500" />
+             : step.status === "done"    ? <CheckCircle className="w-4 h-4 mt-0.5 shrink-0 text-green-500" />
              : step.status === "error"   ? <XCircle      className="w-4 h-4 mt-0.5 shrink-0 text-destructive" />
              :                             <Circle       className="w-4 h-4 mt-0.5 shrink-0 text-muted-foreground/30" />}
               <div className="flex-1 min-w-0 space-y-1">

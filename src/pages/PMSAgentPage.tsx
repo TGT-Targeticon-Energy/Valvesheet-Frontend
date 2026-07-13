@@ -606,7 +606,7 @@ export default function PMSAgentPage() {
             )}
           </button>
 
-          <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex-shrink-0">
+          <div className="p-2 rounded-lg bg-gradient-to-br from-amber-500 to-purple-600 flex-shrink-0">
             <Sparkles className="w-5 h-5 text-white" />
           </div>
           <div className="flex-1 min-w-0">
@@ -636,8 +636,8 @@ export default function PMSAgentPage() {
         <div className="max-w-5xl mx-auto py-4 sm:py-6 space-y-4">
           {isEmpty && (
             <div className="text-center py-8 sm:py-12">
-              <div className="inline-flex p-3 sm:p-4 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 mb-4 sm:mb-6">
-                <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-blue-600" />
+              <div className="inline-flex p-3 sm:p-4 rounded-2xl bg-gradient-to-br from-amber-50 to-purple-50 mb-4 sm:mb-6">
+                <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-amber-600" />
               </div>
               <h2 className="text-lg sm:text-xl font-semibold mb-2">
                 Generate PMS sheets in one chat
@@ -687,11 +687,11 @@ export default function PMSAgentPage() {
 
           {isSending && (
             <div className="flex items-start gap-2 py-2">
-              <div className="p-1.5 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex-shrink-0 mt-0.5">
+              <div className="p-1.5 rounded-lg bg-gradient-to-br from-amber-500 to-purple-600 flex-shrink-0 mt-0.5">
                 <Sparkles className="w-3.5 h-3.5 text-white" />
               </div>
               <div className="flex items-center gap-2 bg-gray-50 rounded-2xl rounded-tl-md px-4 py-2.5 text-sm text-gray-600">
-                <Loader2 className="w-3.5 h-3.5 animate-spin text-blue-600" />
+                <Loader2 className="w-3.5 h-3.5 animate-spin text-amber-600" />
                 <span>Thinking…</span>
               </div>
             </div>
@@ -710,12 +710,12 @@ export default function PMSAgentPage() {
                 placeholder="Ask about a piping class, material, or service…"
                 rows={1}
                 disabled={isSending}
-                className="flex-1 resize-none rounded-xl border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-50"
+                className="flex-1 resize-none rounded-xl border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent disabled:bg-gray-50"
               />
               <button
                 onClick={() => handleSend(inputText)}
                 disabled={!inputText.trim() || isSending}
-                className="p-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors flex-shrink-0"
+                className="p-3 rounded-xl bg-amber-600 text-white hover:bg-amber-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors flex-shrink-0"
               >
                 <Send className="w-5 h-5" />
               </button>
@@ -849,7 +849,7 @@ function BlockRenderer({
   if (block.kind === "user") {
     return (
       <div className="flex justify-end">
-        <div className="bg-blue-600 text-white rounded-2xl rounded-br-md px-4 py-2.5 max-w-[85%] sm:max-w-[75%] text-sm whitespace-pre-wrap">
+        <div className="bg-amber-600 text-white rounded-2xl rounded-br-md px-4 py-2.5 max-w-[85%] sm:max-w-[75%] text-sm whitespace-pre-wrap">
           {block.text}
         </div>
       </div>
@@ -902,7 +902,7 @@ function BlockRenderer({
     <div className="space-y-3">
       {/* Assistant text bubble */}
       <div className="flex items-start gap-2">
-        <div className="p-1.5 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex-shrink-0 mt-0.5">
+        <div className="p-1.5 rounded-lg bg-gradient-to-br from-amber-500 to-purple-600 flex-shrink-0 mt-0.5">
           <Sparkles className="w-3.5 h-3.5 text-white" />
         </div>
         <div className="flex-1 bg-gray-50 rounded-2xl rounded-tl-md px-4 py-2.5 text-sm text-gray-800">
@@ -1154,13 +1154,13 @@ function MissingFieldPicker({
   onPick: (value: string) => void;
 }) {
   return (
-    <div className="rounded-lg border border-blue-200 bg-blue-50/50 px-3 py-2.5">
+    <div className="rounded-lg border border-amber-200 bg-amber-50/50 px-3 py-2.5">
       <div className="flex items-start gap-2">
-        <Sparkles className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+        <Sparkles className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
         <div className="flex-1 min-w-0">
-          <div className="text-xs text-blue-900 mb-1.5">
+          <div className="text-xs text-amber-900 mb-1.5">
             Pick a <span className="font-semibold">{prettyFieldName(field)}</span>{" "}
-            <span className="text-blue-700/80">
+            <span className="text-amber-700/80">
               — or type it in the box below.
             </span>
           </div>
@@ -1170,14 +1170,14 @@ function MissingFieldPicker({
                 <button
                   key={v}
                   onClick={() => onPick(v)}
-                  className="text-xs px-2.5 py-1 rounded-full bg-white border border-blue-300 text-blue-900 hover:bg-blue-100 hover:border-blue-400 transition-colors font-medium"
+                  className="text-xs px-2.5 py-1 rounded-full bg-white border border-amber-300 text-amber-900 hover:bg-amber-100 hover:border-amber-400 transition-colors font-medium"
                 >
                   {v}
                 </button>
               ))}
             </div>
           ) : (
-            <div className="text-xs text-blue-700/80 italic">
+            <div className="text-xs text-amber-700/80 italic">
               (No suggestions available — type the value directly.)
             </div>
           )}
@@ -1386,7 +1386,7 @@ function SelectActionBar({
           type="checkbox"
           checked={allSelected}
           onChange={onSelectAll}
-          className="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+          className="w-4 h-4 rounded border-gray-300 text-amber-600 focus:ring-amber-500"
         />
         <span className="font-medium text-gray-800">Select all</span>
         <span className="text-xs text-muted-foreground">
@@ -1400,7 +1400,7 @@ function SelectActionBar({
         size="sm"
         disabled={selectedCount === 0 || bulkDownloading}
         onClick={onBulkDownload}
-        className="bg-blue-600 hover:bg-blue-700 text-white disabled:opacity-50"
+        className="bg-amber-600 hover:bg-amber-700 text-white disabled:opacity-50"
       >
         {bulkDownloading ? (
           <Loader2 className="w-4 h-4 mr-1.5 animate-spin" />
@@ -1450,10 +1450,10 @@ function ClassMatchCard({
     <div
       className={`w-full text-left rounded-xl border p-3 sm:p-4 transition-all ${
         highlighted
-          ? "border-blue-300 bg-blue-50/40 shadow-sm"
+          ? "border-amber-300 bg-amber-50/40 shadow-sm"
           : selected
-            ? "border-blue-400 bg-blue-50/20"
-            : "border-gray-200 hover:border-blue-300"
+            ? "border-amber-400 bg-amber-50/20"
+            : "border-gray-200 hover:border-amber-300"
       }`}
     >
       <div className="flex items-start gap-3">
@@ -1463,7 +1463,7 @@ function ClassMatchCard({
             type="checkbox"
             checked={selected}
             onChange={onToggleSelect}
-            className="mt-1 w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer flex-shrink-0"
+            className="mt-1 w-4 h-4 rounded border-gray-300 text-amber-600 focus:ring-amber-500 cursor-pointer flex-shrink-0"
             onClick={(e) => e.stopPropagation()}
           />
         )}
@@ -1480,7 +1480,7 @@ function ClassMatchCard({
             <span className="text-sm text-muted-foreground">·</span>
             <span className="text-sm">CA {match.corrosion_allowance}</span>
             {highlighted && (
-              <div className="flex items-center gap-1 text-xs font-medium text-blue-600 ml-auto">
+              <div className="flex items-center gap-1 text-xs font-medium text-amber-600 ml-auto">
                 <Zap className="w-3.5 h-3.5" />
                 <span>Suggested</span>
               </div>
@@ -1532,7 +1532,7 @@ function ClassMatchCard({
               size="sm"
               variant={expanded ? "secondary" : "ghost"}
               onClick={onTogglePreview}
-              className="h-7 text-xs text-blue-700 hover:bg-blue-50"
+              className="h-7 text-xs text-amber-700 hover:bg-amber-50"
               aria-expanded={expanded}
             >
               {expanded ? (
