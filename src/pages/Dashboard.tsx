@@ -155,7 +155,7 @@ export default function Dashboard() {
               <Panel title="Quick Actions">
                 <div className="space-y-2">
                   <Link to="/valvesheet-workflow" className="block">
-                    <Button className="w-full justify-start gap-2 bg-accent hover:bg-accent/90" size="lg">
+                    <Button className="w-full justify-start gap-2 bg-primary text-primary-foreground hover:bg-primary/90" size="lg">
                       <FilePlus2 className="w-4 h-4" />
                       Open Generate Valvesheet
                     </Button>
