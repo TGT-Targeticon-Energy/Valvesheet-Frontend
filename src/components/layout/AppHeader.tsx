@@ -69,14 +69,17 @@ export function AppHeader({ title, breadcrumbs, showLogo = true, isMainHeader = 
         {/* User Menu */}
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="gap-2 h-9 pl-2 pr-3">
-              <div className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center">
-                <User className="w-4 h-4 text-gray-500" />
+            <Button
+              variant="ghost"
+              className="gap-2 h-9 pl-2 pr-3 hover:bg-accent hover:text-accent-foreground focus-visible:ring-primary"
+            >
+              <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center">
+                <User className="w-4 h-4 text-primary" />
               </div>
-              <span className="text-sm font-medium text-gray-700 hidden sm:inline">
+              <span className="text-sm font-medium text-foreground hidden sm:inline">
                 {user.first_name} {user.last_name}
               </span>
-              <svg className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-4 h-4 text-muted-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </Button>

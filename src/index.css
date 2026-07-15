@@ -27,9 +27,12 @@
     --muted: 0 0% 95%;
     --muted-foreground: 0 0% 45%;
 
-    /* Targeticon Charcoal (logo #393939) */
-    --accent: 0 0% 22%;
-    --accent-foreground: 0 0% 100%;
+    /* Hover/highlight fill (used app-wide by ghost buttons, dropdown & menu
+       items, calendar cells, etc.) — kept a light neutral tint so those
+       stay subtle; the logo's charcoal lives in --sidebar-background and
+       --foreground instead of here. */
+    --accent: 0 0% 92%;
+    --accent-foreground: 0 0% 20%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 0% 100%;
