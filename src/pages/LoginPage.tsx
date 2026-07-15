@@ -192,7 +192,7 @@ const LoginPage = () => {
                   <button
                     type="button"
                     onClick={() => setForgotPasswordOpen(true)}
-                    className="text-sm font-medium text-amber-600 hover:text-amber-700 hover:underline"
+                    className="text-sm font-medium text-primary hover:text-primary/80 hover:underline"
                   >
                     Forgot password?
                   </button>
@@ -211,7 +211,7 @@ const LoginPage = () => {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-amber-600 hover:bg-amber-700"
+                className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
               >
                 {isLoading ? (
                   <>
